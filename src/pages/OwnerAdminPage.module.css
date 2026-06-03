@@ -1,0 +1,129 @@
+.page {
+  max-width: 560px;
+  margin: 2rem auto;
+  padding: 0 2rem 4rem;
+}
+.card {
+  background: white;
+  border: 1px solid #e2dbd0;
+  border-radius: 8px;
+  padding: 2rem;
+}
+.cardHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ede8e0;
+}
+.cardHeader h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0.3rem;
+}
+.cardHeader p { font-size: 0.8rem; color: #7a6f68; }
+.badge {
+  background: #c4562a;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+.form { display: flex; flex-direction: column; gap: 1rem; }
+.formGroup { display: flex; flex-direction: column; gap: 4px; }
+.formGroup label { font-size: 0.8rem; color: #7a6f68; }
+.formGroup input, .formGroup textarea {
+  border: 1px solid #e2dbd0;
+  border-radius: 4px;
+  padding: 9px 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.88rem;
+  background: #f7f3ed;
+  outline: none;
+}
+.formGroup input:focus, .formGroup textarea:focus { border-color: #c4562a; }
+.stepInfo { font-size: 0.88rem; color: #3d3530; margin-bottom: 1rem; }
+.searchBar { display: flex; gap: 8px; margin-bottom: 1rem; }
+.searchBar input {
+  flex: 1;
+  border: 1px solid #e2dbd0;
+  border-radius: 4px;
+  padding: 9px 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.88rem;
+  background: #f7f3ed;
+  outline: none;
+}
+.searchBar button {
+  background: #3a6b8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 9px 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.results { margin-top: 0.5rem; }
+.resultItem {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ede8e0;
+  align-items: center;
+  cursor: pointer;
+}
+.bookCover {
+  width: 44px; height: 60px;
+  background: #ede8e0;
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; flex-shrink: 0; overflow: hidden;
+}
+.bookInfo { flex: 1; }
+.bookTitle { font-size: 0.85rem; font-weight: 500; margin-bottom: 2px; }
+.bookMeta { font-size: 0.72rem; color: #7a6f68; }
+.bookPrice { font-size: 0.8rem; font-weight: 700; margin-top: 3px; }
+.selectBtn {
+  background: #1a1612; color: #f7f3ed;
+  border: none; border-radius: 3px;
+  padding: 5px 12px; font-size: 0.75rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer; flex-shrink: 0;
+}
+.pickedBook {
+  display: flex; gap: 1rem;
+  padding: 1rem; background: #f7f3ed;
+  border-radius: 6px; margin-bottom: 1.2rem;
+}
+.bigCover {
+  width: 70px; height: 94px;
+  background: #ede8e0; border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; flex-shrink: 0; overflow: hidden;
+}
+.pickedBook h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
+.pickedBook p { font-size: 0.78rem; color: #7a6f68; margin-bottom: 2px; }
+.btnRow { display: flex; gap: 8px; margin-top: 1rem; }
+.primaryBtn {
+  flex: 1; background: #c4562a; color: white;
+  border: none; border-radius: 4px; padding: 11px;
+  font-family: 'Noto Sans KR', sans-serif; font-size: 0.9rem;
+  cursor: pointer;
+}
+.secondaryBtn {
+  background: #f7f3ed; color: #3d3530;
+  border: 1px solid #e2dbd0; border-radius: 4px; padding: 11px 16px;
+  font-family: 'Noto Sans KR', sans-serif; font-size: 0.9rem;
+  cursor: pointer;
+}
+.done { text-align: center; padding: 2rem 0; }
+.doneIcon {
+  width: 56px; height: 56px;
+  background: #4a6741; color: white;
+  border-radius: 50%; font-size: 1.5rem;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1rem;
+}
+.done h3 { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; margin-bottom: 0.5rem; }
+.done p { font-size: 0.85rem; color: #7a6f68; line-height: 1.7; margin-bottom: 1.5rem; }

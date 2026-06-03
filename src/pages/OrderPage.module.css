@@ -1,0 +1,129 @@
+.page {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 2rem 4rem;
+}
+.back {
+  background: none;
+  border: none;
+  color: #7a6f68;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.card {
+  background: white;
+  border: 1px solid #e2dbd0;
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.card h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #ede8e0;
+}
+.itemList { margin-bottom: 1rem; }
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ede8e0;
+  font-size: 0.85rem;
+  gap: 8px;
+}
+.meta { color: #7a6f68; font-size: 0.75rem; flex: 1; text-align: center; }
+.price { font-weight: 700; }
+.summary { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #ede8e0; }
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #7a6f68;
+  padding: 3px 0;
+}
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 8px 0 0;
+  border-top: 1px solid #e2dbd0;
+  margin-top: 4px;
+}
+.formGroup { margin-bottom: 1rem; }
+.formGroup label {
+  display: block;
+  font-size: 0.78rem;
+  color: #7a6f68;
+  margin-bottom: 4px;
+}
+.formGroup input, .formGroup textarea {
+  width: 100%;
+  border: 1px solid #e2dbd0;
+  border-radius: 4px;
+  padding: 9px 12px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.88rem;
+  background: #f7f3ed;
+  color: #1a1612;
+  outline: none;
+}
+.formGroup input:focus, .formGroup textarea:focus { border-color: #c4562a; }
+.payGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.payBtn {
+  border: 1px solid #e2dbd0;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 0.78rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  background: #f7f3ed;
+  text-align: center;
+  transition: all 0.15s;
+}
+.paySelected {
+  border-color: #c4562a;
+  background: white;
+  color: #c4562a;
+  font-weight: 500;
+}
+.confirmBtn {
+  background: #c4562a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 14px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.confirmBtn:hover { background: #a8441f; }
+.empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #7a6f68;
+}
+.empty button {
+  margin-top: 1rem;
+  background: #c4562a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}

@@ -1,0 +1,67 @@
+.hero {
+  background: #1a1612;
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+.heroLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: #e8a87c;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.heroTitle {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 2.4rem;
+  color: #f7f3ed;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+.heroDesc {
+  color: #e2dbd0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.tabBar {
+  background: #ede8e0;
+  border-bottom: 1px solid #e2dbd0;
+  position: sticky;
+  top: 60px;
+  z-index: 90;
+}
+.tabInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  overflow-x: auto;
+}
+.tabBtn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.83rem;
+  color: #7a6f68;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.tabBtn:hover { color: #1a1612; }
+.tabActive { font-weight: 500; }
+.tabDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
