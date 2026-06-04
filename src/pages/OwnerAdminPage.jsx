@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './OwnerAdminPage.module.css'
 import { searchBooks } from '../utils/aladinApi'
-import { supabase, submitOwnerPick } from '../utils/supabase'
-
+import { supabase, submitOwnerPick } from '../utils/supabase.js'
 // 현재 주차 계산
 function getCurrentWeek() {
   const now = new Date()
