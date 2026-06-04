@@ -1,3 +1,4 @@
+import { submitOrder } from '../utils/supabase.js'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useCartStore } from '../store/cartStore'
@@ -17,15 +18,33 @@ export default function OrderPage() {
 
   const handleChange = (e) => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!form.name || !form.phone || !form.addr1) {
       alert('배송 정보를 모두 입력해 주세요.')
       return
     }
-    // TODO: Supabase에 주문 저장 / 결제 PG 연동
-    alert('주문이 접수되었습니다!\n(결제 PG 연동 후 실 주문 처리됩니다)')
-    clearCart()
-    navigate('/')
+    try {
+      const order = await submitOrder(
+        {
+          buyer_name:  form.name,
+          buyer_phone: form.phone,
+          addr:        form.addr1,
+          addr_detail: form.addr2,
+          memo:        form.memo,
+          pay_method:  payMethod,
+          subtotal:    subtotal,
+          shipping_fee: 3000,
+          total:       total,
+          status:      'pending',
+        },
+        itemList
+      )
+      alert(`주문이 완료되었습니다!\n주문번호: ${order.id.slice(0, 8).toUpperCase()}`)
+      clearCart()
+      navigate('/')
+    } catch (e) {
+      alert('주문 저장에 실패했어요: ' + e.message)
+    }
   }
 
   if (itemList.length === 0) {

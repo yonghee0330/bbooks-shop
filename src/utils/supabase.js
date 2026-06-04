@@ -48,4 +48,29 @@ export async function submitOwnerPick(pick) {
   if (error) throw error
   return data
 }
+// 주문 저장
+export async function submitOrder(orderData, items) {
+  const { data: order, error: orderError } = await supabase
+    .from('orders')
+    .insert(orderData)
+    .select()
+    .single()
+  if (orderError) throw orderError
 
+  const orderItems = items.map(item => ({
+    order_id:   order.id,
+    book_title: item.title,
+    author:     item.author,
+    price:      item.price,
+    qty:        item.qty,
+    source_type: item.sourceType,
+    source_name: item.source,
+  }))
+
+  const { error: itemsError } = await supabase
+    .from('order_items')
+    .insert(orderItems)
+  if (itemsError) throw itemsError
+
+  return order
+}
