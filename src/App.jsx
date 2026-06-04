@@ -1,3 +1,4 @@
+import AdminPage from './pages/AdminPage.jsx'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/"            element={<ShopPage />} />
         <Route path="/order"       element={<OrderPage />} />
         <Route path="/owner-admin" element={<OwnerAdminPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </BrowserRouter>
   )
